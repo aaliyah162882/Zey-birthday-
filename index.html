@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Zey 🖤</title>
+<style>
+body{margin:0;background:#080808;color:white;font-family:Arial;text-align:center}
+.page{min-height:100vh;padding:50px 25px;box-sizing:border-box;display:none}
+.page.active{display:block}
+h1{font-size:38px;margin-top:50px}
+h2{font-size:28px}
+p{font-size:18px;line-height:1.7;color:#ddd}
+button{background:white;color:#111;border:0;border-radius:30px;padding:15px 25px;font-size:17px;font-weight:bold;margin-top:20px}
+.card{background:#181818;border:1px solid #444;border-radius:20px;padding:20px;margin:15px 0}
+.big{font-size:60px}
+</style>
+</head>
+
+<body>
+
+<div class="page active" id="p1">
+<div class="big">🖤</div>
+<h1>Happy Birthday, Zey</h1>
+<p>I made something special for you.</p>
+<p>Because a simple “happy birthday” wasn't enough.</p>
+<button onclick="show(2)">Open it 🖤</button>
+</div>
+
+<div class="page" id="p2">
+<h2>Even with all the distance… 🌎</h2>
+<p>Jacksonville, Florida ↔ Pakistan</p>
+<p>You're far away from me, but somehow you've become someone I feel really close to.</p>
+<p>Distance doesn't erase the connection we've built.</p>
+<button onclick="show(3)">Keep going 💌</button>
+</div>
+
+<div class="page" id="p3">
+<h2>Something I want you to know 💌</h2>
+<div class="card">
+<p>Zey, I wanted this to be more than just a birthday message.</p>
+<p>I've shared parts of myself with you that I wasn't comfortable sharing with other people.</p>
+<p>I've actually expressed my feelings to you when I normally keep them inside, and that means a lot to me.</p>
+<p>I appreciate the trust we've built, our conversations, our laughs, and all the little moments we've shared.</p>
+<p>Even with an entire ocean between us, you've become someone I genuinely care about.</p>
+<p>I'm really glad our paths crossed. 🖤</p>
+</div>
+<button onclick="show(4)">Our future 🗽</button>
+</div>
+
+<div class="page" id="p4">
+<h2>Our little future 🖤</h2>
+<div class="card">🗽<br><b>NYC</b><br>Going together</div>
+<div class="card">🏠<br><b>Our apartment</b><br>Having a place together</div>
+<div class="card">✈️<br><b>Traveling</b><br>Seeing different places</div>
+<div class="card">👨‍👩‍👧‍👦<br><b>Our dream family</b><br>2 girls + 2 boys</div>
+<p>It's cute thinking about all the places we want to go and the future we've talked about.</p>
+<button onclick="show(5)">One last thing… 🎁</button>
+</div>
+
+<div class="page" id="p5">
+<div class="big">🎁</div>
+<h2>For you, Zey</h2>
+<p>I hope this birthday brings you so much happiness.</p>
+<p>I hope you get to travel, experience new things, laugh a lot, and accomplish everything you're dreaming about.</p>
+<p>And maybe one day we'll look back at this and laugh about how we used to dream about NYC, our apartment, traveling, and our future.</p>
+<p>For now, I'm just grateful that I got to know you and that I felt comfortable enough to show you a side of me I don't show everyone.</p>
+<h2>Happy Birthday, Zey. 🖤</h2>
+</div>
+
+<script>
+function show(n){
+document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));
+document.getElementById("p"+n).classList.add("active");
+}
+</script>
+
+</body>
+</html>
